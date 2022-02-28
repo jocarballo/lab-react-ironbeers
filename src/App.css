@@ -2,6 +2,25 @@
   text-align: center;
 }
 
+.beer-image {
+  width: 50px;
+}
+
+.beers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beer {
+  display: flex;
+  flex-direction: row;
+}
+
+.beer-name {
+  
+} 
+
 
 .home-image {
   width: 40px;
