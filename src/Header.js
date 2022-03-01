@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div>
             <div className="header-container">
-                <Link className="App-link" to='/'>
+                <Link className="App-link" to='/beers/:beerId'>
                 <img className="home-image" src="../home.png" alt="home-image" />
                 </Link>
             </div>

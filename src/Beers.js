@@ -5,6 +5,7 @@ import axios from 'axios'
 
 
 
+
 const Beers = () => {
 
     const [beers, setBeers] = useState([]);
@@ -27,7 +28,11 @@ const Beers = () => {
             <div class="beers-container">
                {beers.map((beer, i) => (
                    <ul key={i} class="beer">
-                        <div><img class="beer-image" src={beer.image_url} alt="" /></div>
+                        <div>
+                            <Link className="App-link" to={`/beers/${beer._id}`}>
+                                <img class="beer-image" src={beer.image_url} alt="" />
+                            </Link>
+                        </div> 
                         <div class="beer-name" >{beer.name}</div>
                         <div class="beer-tagline">{beer.tagline}</div>
                         <div class="beer-contribute">{beer.contributed_by}</div>
